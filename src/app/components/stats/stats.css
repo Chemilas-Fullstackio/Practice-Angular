@@ -36,15 +36,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
+    text-align: center;
     margin-left: auto;
     margin-bottom: 24px;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     background-color: #fff;
-    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
 
     mat-icon {
       font-size: 24px;
