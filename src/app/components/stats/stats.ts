@@ -12,7 +12,7 @@ export class Stats {
   stats: Stat[] = [
     { icon: 'headphones', value: '95%', label: 'Customer satisfaction' },
     { icon: 'emoji_events', value: '500+', label: 'Winning award' },
-    { icon: 'check_circle', value: '1000+', label: 'Successful Projects' },
+    { icon: 'check', value: '1000+', label: 'Successful Projects' },
     { icon: 'calendar_today', value: '15+', label: 'Years of experience' }
   ]
 }

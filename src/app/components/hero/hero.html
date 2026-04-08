@@ -1,4 +1,4 @@
-<section class="hero" [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }">
+<div class="hero" [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }">
     <div class="overlay">
         <h1 [innerHTML]="title"></h1>
         @if (subtitle) {
@@ -8,4 +8,4 @@
              <button>{{buttonText}}</button>
             }
     </div>
-</section>
+</div>

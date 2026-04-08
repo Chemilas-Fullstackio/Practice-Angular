@@ -8,10 +8,11 @@
         @for (stat of stats; track stat) {
         <div class="stat-card">
             <div class="icon">
-                <mat-icon>{{ stat.icon }}</mat-icon>
+                <mat-icon fontSet="material-symbols-outlined">{{ stat.icon }}</mat-icon>
             </div>
             <h3>{{ stat.value }}</h3>
             <p>{{ stat.label }}</p>
-        </div>}
+        </div>
+        }
     </div>
 </section>

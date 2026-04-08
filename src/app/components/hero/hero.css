@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 88vh;
+  height: 85vh;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -33,7 +33,7 @@ h1 {
   font-size: 3rem;
   line-height: 1;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {
