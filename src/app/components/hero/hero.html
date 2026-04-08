@@ -1,12 +1,11 @@
-<header class="hero-section">
-    <div class="hero-content">
-        <h1>{{ heroTitle }}</h1>
-        <p>{{ heroSubtitle }}</p>
-
-        <div class="hero-actions">
-            <button class="btn-primary" (click)="onGetStarted()">
-                Get Started
-            </button>
-        </div>
+<section class="hero" [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }">
+    <div class="overlay">
+        <h1 [innerHTML]="title"></h1>
+        @if (subtitle) {
+             <p>{{subtitle}}</p>
+            }
+        @if (buttonText) {
+             <button>{{buttonText}}</button>
+            }
     </div>
-</header>
+</section>

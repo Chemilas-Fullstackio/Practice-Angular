@@ -1,18 +1,21 @@
-import { Component } from '@angular/core';
+import { NgStyle } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  imports: [NgStyle],
   templateUrl: './hero.html',
-  styleUrl: './hero.css',
+  styleUrls: ['./hero.css'],
 })
 
 export class HeroComponent {
-  heroTitle = 'Welcome to Your Future';
-  heroSubtitle = 'A simple, elegant design built in Angular.';
+  @Input() title: string = '';
+  @Input() subtitle: string = '';
+  @Input() buttonText: string = '';
+  @Input() imageUrl: string = '';
 
   onGetStarted() {
     console.log('The button was clicked!');
-    alert('Welcome! Let’s start practicing Angular.');
   }
+
 }
