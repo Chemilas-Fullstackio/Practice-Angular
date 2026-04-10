@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-hero',
   imports: [NgStyle],
   templateUrl: './hero.html',
-  styleUrls: ['./hero.css'],
+  styleUrls: ['./hero.scss'],
 })
 
 export class HeroComponent {

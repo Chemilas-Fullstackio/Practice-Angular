@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from "../../components/navbar/navbar";
-import { HeroComponent } from "../../components/hero/hero";
-import { Stats } from '../../components/stats/stats';
+import { HeroComponent } from "../../shared/components/hero/hero";
+import { Stats } from '../stats/stats';
 
 @Component({
   selector: 'app-home',
-  imports: [NavbarComponent, HeroComponent, Stats],
+  imports: [HeroComponent, Stats],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrl: './home.scss',
 })
 
 export class Home {
-
+  
 }

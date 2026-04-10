@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-stats',
   imports: [MatIconModule],
   templateUrl: './stats.html',
-  styleUrl: './stats.css',
+  styleUrl: './stats.scss',
 })
 
 export class Stats {

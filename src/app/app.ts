@@ -3,13 +3,12 @@ import { RouterOutlet } from "@angular/router";
 import { CommonModule } from '@angular/common';
 import { Home } from "./features/home/home";
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, Home],
+  imports: [RouterOutlet],
   template: `
-    <app-home></app-home>
+    <router-outlet></router-outlet>
   `,
   styles: [``]
 })
