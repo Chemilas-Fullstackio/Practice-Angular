@@ -1,1 +1,18 @@
-<p>services works!</p>
+<div class="service">
+    <h2>{{title}}</h2>
+    <p class="subtitle" [innerHTML]="subtitle"></p>
+
+    <div class="card-grid">
+        @for (service of services; track service.title) {
+        <div class="service-card">
+            <div class="image-wrapper">
+                <img [src]="service.imageUrl" [alt]="service.title">
+            </div>
+            <div class="content">
+                <h3>{{service.title}}</h3>
+                <p>{{service.subtitle}}</p>
+            </div>
+        </div>
+        }
+    </div>
+</div>
