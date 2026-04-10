@@ -30,13 +30,17 @@
               }
             ],
             "styles": [
-                "src/styles.scss"
+              "src/styles.scss"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
-            }
+            },
+            "externalDependencies": [
+              "fonts/Poppins-Regular.ttf",
+              "fonts/Poppins-Bold.ttf"
+            ]
           },
           "configurations": {
             "production": {
