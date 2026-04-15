@@ -1,0 +1,34 @@
+<section class="process-container">
+  <h2>{{title}}</h2>
+  <p class="subtitle" [innerHTML]="subtitle"></p>
+  <div class="process-grid">
+    
+    <div class="image-column">
+      <img src="https://images.pexels.com/photos/1443867/pexels-photo-1443867.jpeg?cs=srgb&dl=pexels-reto-burkler-640438-1443867.jpg&fm=jpg" alt="Tractor in field" class="main-image">
+    </div>
+
+    <div class="accordion-column">
+      @for (step of processSteps; track step.id) {
+        <div class="step-item" [class.active]="activeStep() === step.id" (click)="toggleStep(step.id)">
+          
+          <div class="step-header">
+            <span class="step-number">{{ step.id }}</span>
+            <h3 class="step-title">{{ step.title }}</h3>
+            <span class="chevron" [class.rotate]="activeStep() === step.id">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="step-content" [style.max-height]="activeStep() === step.id ? '400px' : '0'">
+            <p class="content-primary">{{ step.content }}</p>
+            <p class="content-secondary">{{ step.description }}</p>
+          </div>
+          
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,105 @@
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 32px;
+  object-fit: cover;
+  height: 600px;
+}
+
+.step-item {
+  background: #f9f9f9;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.step-item.active {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.step-number {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.step-title {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.chevron.rotate {
+  transform: rotate(180deg);
+}
+
+.step-content {
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 2.2rem;
+}
+
+.content-primary {
+  margin-top: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.content-secondary {
+  margin-top: 1rem;
+  color: #777;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-image {
+    height: 400px;
+  }
+}
