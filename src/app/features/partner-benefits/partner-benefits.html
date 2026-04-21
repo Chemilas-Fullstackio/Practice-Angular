@@ -1,0 +1,12 @@
+<div class="partner-benefits-container">
+    <h2>Benefits to Partner with us</h2>
+    <p>Partner with us and gain access to cutting-edge technology and a supportive network to maximize your farm's potential</p>
+    <div class="items-grid">
+        @for (item of items; track $index) {
+            <div class="item">
+                <mat-icon>{{item.icon}}</mat-icon>
+                <h3>{{item.title}}</h3>
+            </div>
+        }
+    </div>
+</div>

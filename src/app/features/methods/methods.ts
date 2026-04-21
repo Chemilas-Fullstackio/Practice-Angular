@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-methods',
@@ -7,7 +7,7 @@ import { Component, signal } from '@angular/core';
   styleUrl: './methods.scss',
 })
 export class Methods {
-  title = 'Our agricultural methods';
+  @Input() title = '';
 
   subtitle: string = "We blend tradition with innovation to create sustainable, high-yield farming practices that work for today's world";
 

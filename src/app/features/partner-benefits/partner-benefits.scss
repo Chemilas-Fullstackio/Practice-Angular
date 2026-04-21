@@ -1,0 +1,30 @@
+.partner-benefits-container {
+    display: block;
+    background-color: #f8f7f2;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    .items-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 200px);
+        justify-content: center;
+        justify-items: center;
+        gap: 88px;
+        margin: 0 auto;
+        padding-top: 40px;
+        max-width: 100%;
+    }
+
+    .item {
+        width: 100%;
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+}
